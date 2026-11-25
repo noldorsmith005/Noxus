@@ -162,7 +162,7 @@ class _JournalState extends State<Journal> {
                           )
                         : null,
                     filled: true,
-                    fillColor: const Color.fromARGB(140, 25, 30, 55),
+                    fillColor: const Color.fromARGB(140, 20, 20, 20),
                     contentPadding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(20.0),
@@ -183,7 +183,7 @@ class _JournalState extends State<Journal> {
                       labelStyle: TextStyle(color: _filterIndex == 0 ? Colors.white : Colors.white70, fontWeight: _filterIndex == 0 ? FontWeight.bold : FontWeight.normal),
                       selected: _filterIndex == 0,
                       selectedColor: Colors.purple.withValues(alpha: 0.4),
-                      backgroundColor: const Color.fromARGB(90, 30, 35, 60),
+                      backgroundColor: const Color.fromARGB(90, 20, 20, 20),
                       side: BorderSide(color: _filterIndex == 0 ? Colors.purpleAccent : Colors.transparent, width: 1.2),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                       onSelected: (selected) {
@@ -196,7 +196,7 @@ class _JournalState extends State<Journal> {
                       labelStyle: TextStyle(color: _filterIndex == 1 ? Colors.white : Colors.white70, fontWeight: _filterIndex == 1 ? FontWeight.bold : FontWeight.normal),
                       selected: _filterIndex == 1,
                       selectedColor: Colors.purple.withValues(alpha: 0.4),
-                      backgroundColor: const Color.fromARGB(90, 30, 35, 60),
+                      backgroundColor: const Color.fromARGB(90, 20, 20, 20),
                       side: BorderSide(color: _filterIndex == 1 ? Colors.purpleAccent : Colors.transparent, width: 1.2),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                       onSelected: (selected) {
@@ -209,7 +209,7 @@ class _JournalState extends State<Journal> {
                       labelStyle: TextStyle(color: _filterIndex == 2 ? Colors.white : Colors.white70, fontWeight: _filterIndex == 2 ? FontWeight.bold : FontWeight.normal),
                       selected: _filterIndex == 2,
                       selectedColor: Colors.purple.withValues(alpha: 0.4),
-                      backgroundColor: const Color.fromARGB(90, 30, 35, 60),
+                      backgroundColor: const Color.fromARGB(90, 20, 20, 20),
                       side: BorderSide(color: _filterIndex == 2 ? Colors.purpleAccent : Colors.transparent, width: 1.2),
                       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
                       onSelected: (selected) {

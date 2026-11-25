@@ -646,27 +646,29 @@ class _SettingsPageState extends State<SettingsPage> {
               ),
             ),
             SizedBox(height: 8),
-            SizedBox(
-              width: 370,
-              height: 50,
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color.fromARGB(100, 80, 80, 80),
-                  foregroundColor: Colors.white,
-                  elevation: 5,
-                  padding: EdgeInsets.symmetric(horizontal: 90, vertical: 10),
-                  textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 4.0),
+              child: SizedBox(
+                width: double.infinity,
+                height: 50,
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(100, 80, 80, 80),
+                    foregroundColor: Colors.white,
+                    elevation: 5,
+                    textStyle: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(12),
+                    ),
                   ),
+                  onPressed: () async {
+                    if (appState.settings.key_active) {
+                      await authenticate(context, appState);
+                    }
+                    clearJournalAlert();
+                  }, 
+                  child: Text("Clear Journal ", style: TextStyle(color: Colors.red))
                 ),
-                onPressed: () async {
-                  if (appState.settings.key_active) {
-                    await authenticate(context, appState);
-                  }
-                  clearJournalAlert();
-                }, 
-                child: Text("Clear Journal ", style: TextStyle(color: Colors.red))
               ),
             ),
             SizedBox(height: 50)

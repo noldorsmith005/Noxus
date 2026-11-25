@@ -114,7 +114,7 @@ class _WelcomePageState extends State<WelcomePage> {
                 decoration: BoxDecoration(
                   color: Theme.of(context).colorScheme.secondary,
                 ),
-                child: Text("Menu", style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+                child: const SizedBox(),
               ),
             ),
             ListTile(
